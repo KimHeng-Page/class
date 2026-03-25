@@ -60,12 +60,15 @@ try {
     $dbError = $e->getMessage();
 }
 
-$token = getenv('TELEGRAM_BOT_TOKEN') ?: "8713621756:AAFPF4FaIzj27pDtvd2oYFq4MOaL09oF_K8";
-$chatId = getenv('TELEGRAM_CHAT_ID') ?: "@kimcodelist_bot";
+$token = trim((string) getenv('TELEGRAM_BOT_TOKEN'));
+$chatId = trim((string) getenv('TELEGRAM_CHAT_ID'));
 
 if ($token === '' || $chatId === '') {
     http_response_code(500);
-    echo json_encode(['ok' => false, 'error' => 'Telegram token or chat ID is missing.']);
+    echo json_encode([
+        'ok' => false,
+        'error' => 'Telegram token or chat ID is missing. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in environment.'
+    ]);
     exit;
 }
 
