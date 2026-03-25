@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="km" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="web.png">
+    <title>Pop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased">
+
+    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-[3000] border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-blue-700">គឹម.<span
+                            class="text-red-500">tech</span></a>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home"
+                            class="text-gray-600 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition">ទំព័រដើម</a>
+                        <a href="#about"
+                            class="text-gray-600 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition">អំពី</a>
+                        <a href="#expertise"
+                            class="text-gray-600 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition">ជំនាញ</a>
+                        <a href="#gallery"
+                            class="text-orange-600 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition">រូបភាព</a>
+                        <a href="#contact"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium transition shadow-md">ទំនាក់ទំនង</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="hamburgerBtn" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-400"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <svg id="menuIconClosed" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="menuIconOpen" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">ទំព័រដើម</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">អំពី</a>
+                <a href="#expertise"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">ជំនាញ</a>
+                <a href="#gallery"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">វិចិត្រសាល</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium transition shadow-md">ទំនាក់ទំនង</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <section id="home"
+            class="text-center pt-32 pb-16 bg-white rounded-b-3xl shadow-inner mb-16 relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70"></div>
+            <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-70"></div>
+            <div class="max-w-4xl mx-auto">
+
+                <h1 class="text-5xl md:text-3xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    <span class="text-red-500"> ហេង </span>៖ <span class="text-blue-700">អនុវត្តន៍ប្រកបដោយសីលធម៌</span>
+                    និងអនាគតឌីជីថល
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    ចេះដឹង និងជាអ្នកដឹកនាំផ្នែកកុំព្យូទ័របៃតង និងការធ្វើប្រជាធិបតេយ្យ AI។ ស្វែងយល់ពីស្នាដៃ ទស្សនវិជ្ជា
+                    និងការរួមចំណែក។
+                </p>
+
+                <div class="mt-12 flex justify-center">
+                    <img src="./asset/images/how.jpg" alt="រូបថតអាជីពរបស់ ហេង"
+                        class="rounded-full shadow-2xl border-4 border-white ring-4 ring-blue-500/50 w-[300px] h-[300px] object-cover transition duration-500 ease-in-out hover:scale-105 "
+                        onerror="this.src='how.jpg?text=Image+Missing'">
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+                    <div class="soft-card glass-panel p-6">
+                        <h5 class="text-sm uppercase tracking-widest text-blue-600 font-semibold">គម្រោង</h5>
+                        <p class="text-sm text-gray-600 mt-2">គំនិតផ្ដួចផ្ដើម​ផ្នែក​បណ្ដាញ​អ៊ីនធឺណិត បញ្ញាសិប្បនិម្មិត
+                            និង​បទពិសោធន៍​អ្នកប្រើប្រាស់ (UX) ត្រូវបានផ្តល់ជូនទូទាំងពិភពលោក។</p>
+                    </div>
+                    <div class="soft-card glass-panel p-6">
+                        <h5 class="text-sm uppercase tracking-widest text-orange-600 font-semibold">ការសន្ទនា</h5>
+                        <p class="text-sm text-gray-600 mt-2">សុន្ទរកថា​សំខាន់ៗ​ស្តីពី​បច្ចេកវិទ្យា
+                            និង​ការរចនា​ដែលមាន​ការទទួលខុសត្រូវ។</p>
+                    </div>
+                    <div class="soft-card glass-panel p-6">
+                        <h5 class="text-sm uppercase tracking-widest text-emerald-600 font-semibold">ការណែនាំ</h5>
+                        <p class="text-sm text-gray-600 mt-2">ស្ថាបនិក និងនិស្សិតដំបូងៗទទួលបានការគាំទ្រទូទាំងពិភពលោក។
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white rounded-xl shadow-xl my-16 border-t-8 border-blue-500">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">អំពី <span class="text-blue-800">គឹមហេង</span>
+            </h2>
+
+            <div class="max-w-4xl mx-auto space-y-8 text-lg text-gray-700 p-6 md:p-8">
+                <p>
+                    កើតនៅ <span class="text-blue-800">សៀមរាប</span> , <span class="text-blue-800">ហេង</span>
+                    បានបង្កើតនឹង ជាអ្នកចេះដឹងច្រើនយ៉ាងឆាប់រហ័ស ដោយភ្ជាប់ពិភពនៃបច្ចេកវិទ្យាទំនើប
+                    និងសិល្បៈបុរាណដោយគ្មានភាពរអាក់រអួល។ ដំណើរសិក្សាត្រូវបានសម្គាល់ដោយការចង់ដឹងចង់ឮឥតឈប់ឈរ
+                    ដោយឈានដល់បរិញ្ញាបត្រពីរផ្នែកដែលផ្តោតលើកុំព្យូទ័របៃតង និងសីលធម៌ឌីជីថល។
+                    ការស្រាវជ្រាវដំបូងរបស់នាងបានប្រមូលផ្តុំលើការបង្កើត ក្របខ័ណ្ឌ <span class="text-blue-800">AI</span>
+                    ដែលផ្តល់អាទិភាពដល់ការទទួលខុសត្រូវបរិស្ថាន
+                    ដែលនាំឱ្យមានវិធីសាស្រ្តវិន័យរបស់នាងក្នុងការអភិវឌ្ឍបច្ចេកវិទ្យា។
+                </p>
+                <p>
+                    ស្នាដៃដែលគេទទួលស្គាល់បំផុតរហូតមកដល់បច្ចុប្បន្ន គឺ " គម្រោង <span class="text-blue-800">Web App
+                        Development</span> "
+                    ដែលជាវេទិកាសកលមួយដែលត្រូវបានរចនាឡើងដើម្បីធ្វើប្រជាធិបតេយ្យនូវការចូលប្រើឧបករណ៍រៀនម៉ាស៊ីនទំនើបសម្រាប់អាជីវកម្មខ្នាតតូច
+                    និងអង្គការមិនរកប្រាក់ចំណេញទូទាំងពិភពលោក។ ការងារដ៏ត្រួសត្រាយនេះ
+                    មិនត្រឹមតែទទួលបានការទទួលស្គាល់ពីអន្តរជាតិប៉ុណ្ណោះទេ ប៉ុន្តែវាក៏បានកំណត់កេរ្តិ៍ឈ្មោះរបស់គាត់សម្រាប់
+                    អនុវត្តន៍ប្រកបដោយសីលធម៌ និងការរចនាប្រកបដោយផលប៉ះពាល់។
+                </p>
+                <p>
+                    ហេងតែងតែថ្លែងជាសាធារណៈអំពីតម្រូវការដ៏សំខាន់សម្រាប់ការរក្សាតុល្យភាពរវាងជីវិតឌីជីថលដែលកាន់តែស្មុគស្មាញ
+                    និងការពិតដែលមានមូលដ្ឋាន និងដឹងខ្លួន។ ទស្សនវិជ្ជាផ្ទាល់ខ្លួនរបស់នាងសង្កត់ធ្ងន់លើការកសាងសហគមន៍
+                    និងអន្តរកម្មប្រកបដោយការគិត។ ប្រកាន់ខ្ជាប់នូវគោលការណ៍៖ " វិធីល្អបំផុតដើម្បីទស្សន៍ទាយអនាគត គឺ <span
+                        class="text-red-700">ការបង្កើតវា</span>​ " <span
+                        class="text-blue-800">ដោយជំរុញព្រំដែននៃអ្វីដែលអាចធ្វើទៅបានជានិច្ច ខណៈពេលដែលរក្សាបាននូវតម្លៃស្នូល
+                        និងការលះបង់ចំពោះវឌ្ឍនភាពសង្គម</span>។
+                </p>
+            </div>
+        </section>
+
+        <section id="expertise" class="my-16">
+            <h2 class="text-4xl font-bold  mb-12 text-center text-blue-800">ជំនាញ</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-green-500">
+                    <svg class="w-10 h-10 text-green-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">បញ្ញាសិប្បនិម្មិតប្រកបដោយនិរន្តរភាព</h3>
+                    <p class="text-gray-600">
+                        ការបង្កើតម៉ូដែលការរៀនម៉ាស៊ីនដែលត្រូវបានបង្កើនប្រសិទ្ធភាពសម្រាប់ប្រសិទ្ធភាពថាមពល
+                        និងការកាត់បន្ថយធនធាន ធានាថាការរីកចម្រើនបច្ចេកវិទ្យាស្របតាមការគ្រប់គ្រងបរិស្ថាន។</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-yellow-500">
+                    <svg class="w-10 h-10 text-yellow-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.27a8.986 8.986 0 011.954 2.822c-2.31 3.535-6.613 6.64-10.954 6.64-4.341 0-8.644-3.105-10.954-6.64a9.99 9.99 0 011.954-2.822m8.954 0a8.986 8.986 0 01-1.954-2.822c2.31-3.535 6.613-6.64 10.954-6.64 4.341 0 8.644 3.105 10.954 6.64a9.99 9.99 0 01-1.954 2.822">
+                        </path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">សីលធម៌ និងគោលនយោបាយឌីជីថល</h3>
+                    <p class="text-gray-600">ការប្រឹក្សាយោបល់ពីអ្នកជំនាញលើអភិបាលកិច្ចទិន្នន័យ ស្ដង់ដារឯកជនភាព
+                        និងការបង្កើតក្បួនដោះស្រាយដែលមានតម្លាភាព និងគ្មានភាពលំអៀងសម្រាប់វិស័យសាធារណៈ និងឯកជន។</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-500">
+                    <svg class="w-10 h-10 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9.75 17L9.75 5M14.25 17L14.25 5M4.5 17H19.5V5H4.5M12 21V17"></path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">ការរចនា UX/UI និងការបង្កើតគំរូ</h3>
+                    <p class="text-gray-600">ការបង្កើតចំណុចប្រទាក់ឌីជីថលដែលងាយយល់ ងាយស្រួលចូលប្រើ
+                        និងផ្ដោតលើអ្នកប្រើប្រាស់ ចាប់ពីការគូសវាសរហូតដល់គំរូអន្តរកម្មដែលមានភាពជាក់លាក់ខ្ពស់។</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="my-16 bg-gray-50 p-8 rounded-xl shadow-inner">
+            <h2 class="text-4xl font-bold text-orange-600 mb-12 text-center">រូបភាព</h2>
+
+            <div class="photo-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="photo-card p-4 bg-white rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">រូបថតអាជីព</h3>
+                    <img src="./asset/images/code.png" alt="none"
+                        class="w-full h-64 object-cover border-4 border-gray-100 rounded-lg mx-auto"
+                        onerror="this.src='code.jpg?text=Image+Missing'">
+                    <p class="text-sm text-gray-500 mt-2">ការថតស្ទូឌីយោ</p>
+                </div>
+
+                <div class="photo-card p-4 bg-white rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">អ្នកថ្លែងសន្និសីទ</h3>
+                    <img src="./asset/images/smile.jpg" alt="none"
+                        class="w-full h-64 object-cover border-4 border-gray-100 rounded-lg mx-auto"
+                        onerror="this.src='smile.jpg?text=Image+Missing'">
+                    <p class="text-sm text-gray-500 mt-2">ព្រឹត្តិការណ៍ថ្លែងសន្ទរកថា</p>
+                </div>
+
+                <div class="photo-card p-4 bg-white rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">ពិធីសម្ពោធគម្រោង Web App</h3>
+                    <img src="./asset/images/web.png" alt="none"
+                        class="w-full h-64 object-cover border-4 border-gray-100 rounded-lg mx-auto"
+                        onerror="this.src='web.png?text=Image+Missing'">
+                    <p class="text-sm text-gray-500 mt-2">សម្ពោធគម្រោង</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="my-16 bg-blue-700 p-12 rounded-3xl shadow-2xl">
+            <h2 class="text-4xl font-bold text-white mb-4 text-center">ទំនាក់ទំនង</h2>
+            <p class="text-blue-200 text-lg mb-10 text-center max-w-2xl mx-auto">
+                សម្រាប់សំណើរសហការ កិច្ចសម្ភាសន៍ ឬការស្នើសុំប្រព័ន្ធផ្សព្វផ្សាយ សូមប្រើទម្រង់ខាងក្រោមនេះ។
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                <div class="gradient-border">
+                    <div class="soft-card glass-panel p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">ការទូទាត់ប្រាក់តាម ABA QR</h3>
+                        <p class="text-gray-600 mb-6">
+                            ស្កេនដើម្បីគាំទ្រគម្រោង ឬបញ្ជាក់ប្រាក់កក់សម្រាប់ការណាត់ជួបរបស់អ្នក។ ជ្រើសរើស USD ឬ KHR
+                            នៅក្នុងបង្អួចលេចឡើង។
+                        </p>
+                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                            <p class="text-sm text-gray-500 mb-2">Quick Access</p>
+                            <div class="flex items-center justify-between gap-4">
+                                <div>
+                                    <p class="text-lg font-semibold text-gray-900">ABA Mobile</p>
+                                    <p class="text-sm text-gray-500">ការទូទាត់ប្រាក់ QR ប្រកបដោយសុវត្ថិភាព</p>
+                                </div>
+                                <button id="openQrModal" type="button"
+                                    class="px-5 py-2.5 rounded-full bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 transition">
+                                    បង្ហាញ QR
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-2 gap-4 text-sm text-gray-600">
+                            <div class="bg-white rounded-xl border border-gray-100 p-4">
+                                <p class="font-semibold text-gray-900">ការបញ្ជាក់រហ័ស</p>
+                                <p class="text-gray-500 mt-1">ការជូនដំណឹងភ្លាមៗបន្ទាប់ពីការទូទាត់។</p>
+                            </div>
+                            <div class="bg-white rounded-xl border border-gray-100 p-4">
+                                <p class="font-semibold text-gray-900">ធនាគារដែលទុកចិត្ត</p>
+                                <p class="text-gray-500 mt-1">លំហូរប្រតិបត្តិការដែលមានសុវត្ថិភាពរបស់ ABA។</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-2xl w-full">
+                    <form action="send_to_telegram.php" method="POST" id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-gray-700">ឈ្មោះពេញ</label>
+                            <input type="text" id="fullName" name="fullName" required
+                                class="mt-1 block w-full rounded-lg border border-gray-300 p-3 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="contactEmail"
+                                class="block text-sm font-medium text-gray-700">អាសយដ្ឋានអ៊ីមែល</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required
+                                class="mt-1 block w-full rounded-lg border border-gray-300 p-3 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">ប្រធានបទ</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="mt-1 block w-full rounded-lg border border-gray-300 p-3 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">សារ</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="mt-1 block w-full rounded-lg border border-gray-300 p-3 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input id="agreement" name="agreement" type="checkbox" required
+                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <label for="agreement"
+                                class="ml-2 block text-sm text-gray-900">ខ្ញុំយល់ព្រមតាមគោលការណ៍ឯកជនភាព។</label>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-800 text-white font-extrabold py-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-[1.01]">
+                            ផ្ញើសារ
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-16 p-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-sm">&copy; 2025 គឹម.tech. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+                <p class="text-xs mt-1 text-gray-400">ការរចនាគេហទំព័រដែលផ្តោតលើភាពច្បាស់លាស់ និងប្លង់អាជីព។</p>
+            </div>
+
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="LinkedIn"><svg
+                        class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.136-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="Twitter"><svg
+                        class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 4.01c-.72.32-1.47.53-2.26.65.81-.49 1.44-1.26 1.73-2.18-.75.45-1.58.78-2.45.96-.71-.72-1.72-1.17-2.84-1.17-2.13 0-3.86 1.73-3.86 3.86 0 .3.03.6.09.89-3.21-.16-6.07-1.7-8.03-4.13-.33.57-.52 1.23-.52 1.95 0 1.34.68 2.53 1.72 3.22-.63-.02-1.22-.19-1.74-.48v.05c0 1.87 1.33 3.43 3.09 3.79-.32.08-.65.12-1 .12-.24 0-.47-.02-.7-.07.49 1.53 1.9 2.64 3.56 2.67-1.32 1.03-2.98 1.65-4.79 1.65-.31 0-.62-.02-.93-.06 1.72 1.1 3.76 1.74 5.95 1.74 7.15 0 11.07-5.91 11.07-11.07l-.01-.5z" />
+                    </svg></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="Github"><svg
+                        class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.165 6.839 9.489.5.092.682-.218.682-.483 0-.237-.008-.87.013-1.705-2.782.605-3.37-1.34-3.37-1.34-.455-1.154-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.07 1.531 1.033 1.531 1.033.89 1.527 2.342 1.082 2.91.826.091-.64.35-1.082.636-1.332-2.22-.253-4.555-1.11-4.555-4.943 0-1.09.39-1.984 1.033-2.683-.104-.253-.448-1.27.097-2.646 0 0 .84-.268 2.75 1.026A9.648 9.648 0 0112 6.784c.85.006 1.707.114 2.502.336 1.908-1.294 2.748-1.026 2.748-1.026.545 1.376.2 2.393.097 2.646.643.7 1.033 1.593 1.033 2.683 0 3.84-2.337 4.686-4.562 4.935.359.309.678.92.678 1.854 0 1.332-.012 2.404-.012 2.73 0 .267.17.58.687.488C21.137 20.165 24 16.418 24 12c0-5.523-4.477-10-10-10z" />
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="qrModal" class="qr-modal" aria-hidden="true">
+        <div class="qr-card">
+            <button id="closeQrModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700"
+                aria-label="Close">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.4 5l12.6 12.6-1.4 1.4L5 6.4 6.4 5zm12.6 1.4L6.4 19l-1.4-1.4L17.6 5l1.4 1.4z" />
+                </svg>
+            </button>
+            <h3 class="text-2xl font-bold text-gray-900">ការទូទាត់ប្រាក់តាម ABA QR</h3>
+            <p class="text-sm text-gray-500 mt-1">ជ្រើសរើសរូបិយប័ណ្ណដើម្បីបង្ហាញលេខកូដ QR ដែលត្រឹមត្រូវ។</p>
+
+            <div class="flex gap-3 mt-6">
+                <button id="tabUsd" class="tab-btn active" type="button">USD</button>
+                <button id="tabKhr" class="tab-btn inactive" type="button">KHR</button>
+            </div>
+
+            <div class="mt-6 bg-white rounded-3xl p-8 border border-gray-100 text-center shadow-xl shadow-gray-200/50">
+                <img id="qrImage" src="./asset/images/aba.png" alt="ABA QR USD" class="w-64 h-64 object-contain mx-auto drop-shadow-sm"
+                    onerror="this.src='aba.png?text=QR+Missing'">
+                <p id="qrLabel" class="text-sm font-medium text-gray-400 mt-6 tracking-wide">
+                    ស្កេនជាមួយ ABA Mobile (USD)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"
+        class="fixed bottom-6 right-6 z-[4500] translate-y-20 opacity-0 transition duration-300 pointer-events-none">
+        <div class="bg-white border border-emerald-200 text-emerald-700 px-5 py-3 rounded-2xl shadow-lg">
+            <p class="text-sm font-semibold">សារត្រូវបានផ្ញើដោយជោគជ័យ!</p>
+            <p class="text-xs text-emerald-600 mt-1">យើងនឹងឆ្លើយតបឆាប់ៗនេះ។</p>
+        </div>
+    </div>
+    <script src="./asset/js/index.js"></script>
+</body>
+</html>

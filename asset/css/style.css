@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #1d4ed8;
+    --background-light: #f9fafb;
+}
+
+body {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    background-color: var(--background-light);
+    color: #1f2937;
+    line-height: 1.8;
+    position: relative;
+}
+
+* {
+    border-radius: 8px !important;
+}
+
+img.rounded-full {
+    border-radius: 50% !important;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -20% -10% auto -10%;
+    height: 60vh;
+    background: radial-gradient(closest-side, rgba(29, 78, 216, 0.18), rgba(29, 78, 216, 0));
+    z-index: -1;
+    pointer-events: none;
+}
+
+.photo-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.soft-card {
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.gradient-border {
+    position: relative;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(120deg, rgba(59, 130, 246, 0.4), rgba(14, 165, 233, 0.35), rgba(249, 115, 22, 0.35));
+}
+
+.qr-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 4000;
+}
+
+.qr-modal.active {
+    display: flex;
+}
+
+.qr-card {
+    width: min(520px, 92vw);
+    background: #fff;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.25);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    position: relative;
+}
+
+.tab-btn {
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.tab-btn.active {
+    background: #1d4ed8;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(29, 78, 216, 0.25);
+}
+
+.tab-btn.inactive {
+    background: #f1f5f9;
+    color: #475569;
+    border-color: #e2e8f0;
+}
